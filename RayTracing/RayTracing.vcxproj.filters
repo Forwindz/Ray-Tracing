@@ -13,5 +13,144 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Engine">
+      <UniqueIdentifier>{cb6dca74-644f-469a-a014-71992a1f9caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Math">
+      <UniqueIdentifier>{346d6788-f4df-423d-97d5-8a31d1f4a7a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Math\Vector">
+      <UniqueIdentifier>{5c021338-ecee-4e95-8ade-f1261148b6eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Math\Matrix">
+      <UniqueIdentifier>{e197cec0-0b53-4ec4-a050-5714d67438a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Scene">
+      <UniqueIdentifier>{b2988eab-faf2-4201-a137-2b73448dd384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Scene\SceneObject">
+      <UniqueIdentifier>{db365378-0359-444d-8234-66a99b6e2e07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Display">
+      <UniqueIdentifier>{410b3ce9-9501-4b77-bbb5-fd5b4eed9227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Tools">
+      <UniqueIdentifier>{71aadb33-dd6a-4f21-8fb2-1d0ff9aebccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Scene\Material">
+      <UniqueIdentifier>{3766c21d-42a5-49c2-a413-922d23aa88f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Engine">
+      <UniqueIdentifier>{58a4c03e-7a2e-48a6-af09-ca4f487d9128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Engine\Display">
+      <UniqueIdentifier>{81c4cf71-d2ec-4fb7-b5e8-5dde505abc81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Engine\Scene">
+      <UniqueIdentifier>{4005ea50-024c-4439-a88e-4526203fa1ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Engine\Scene\Material">
+      <UniqueIdentifier>{20094206-9eed-4180-a6e6-5504d474c29e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Engine\Tools">
+      <UniqueIdentifier>{e292db4e-c9ed-40ab-aa60-61172ccb7b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Engine\Scene\SceneObject">
+      <UniqueIdentifier>{4ccb4a98-1f08-4799-a80a-36825e7ae0aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialMetal.cpp">
+      <Filter>源文件\Engine\Scene\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialDielectric.cpp">
+      <Filter>源文件\Engine\Scene\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialLambertian.cpp">
+      <Filter>源文件\Engine\Scene\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件\Engine\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>源文件\Engine\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Saver.cpp">
+      <Filter>源文件\Engine\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>源文件\Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Assert.cpp">
+      <Filter>源文件\Engine\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>源文件\Engine\Scene\SceneObject</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Precompile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RayTracingMath.h">
+      <Filter>头文件\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>头文件\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>头文件\Engine\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec3.h">
+      <Filter>头文件\Engine\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec4.h">
+      <Filter>头文件\Engine\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>头文件\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>头文件\Engine\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>头文件\Engine\Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>头文件\Engine\Scene\SceneObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>头文件\Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>头文件\Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件\Engine\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.h">
+      <Filter>头文件\Engine\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Saver.h">
+      <Filter>头文件\Engine\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Assert.h">
+      <Filter>头文件\Engine\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="globalTools.h">
+      <Filter>头文件\Engine\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialLambertian.h">
+      <Filter>头文件\Engine\Scene\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialMetal.h">
+      <Filter>头文件\Engine\Scene\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialDielectric.h">
+      <Filter>头文件\Engine\Scene\Material</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
