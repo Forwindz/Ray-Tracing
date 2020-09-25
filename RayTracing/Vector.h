@@ -55,7 +55,7 @@ namespace rtm
 	//define types
 
 	template<int vecLen>
-	using Vec_dt	=	Vec<RtmGeneralType,vecLen>;
+	using Vec_dt	=	Vec<Decimal,vecLen>;
 	template<int vecLen>
 	using Vecf		=	Vec<float,vecLen>;
 	template<int vecLen>

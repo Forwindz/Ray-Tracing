@@ -60,7 +60,7 @@ namespace rtm
 	};
 
 	//define types
-	typedef Vec<RtmGeneralType,		3>			Vec3;
+	typedef Vec<Decimal,		3>			Vec3;
 	typedef Vec<float,				3>			Vec3f;
 	typedef Vec<double,				3>			Vec3d;
 	typedef Vec<long double,		3>			Vec3ld;

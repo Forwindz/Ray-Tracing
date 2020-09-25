@@ -1,3 +1,4 @@
+#include "Precompile.h"
 #include "Saver.h"
 
 void rd::saveBitmap(const std::string & fileName, const int width, const int height, const uchar * data)

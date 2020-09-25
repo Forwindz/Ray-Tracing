@@ -21,7 +21,7 @@ namespace rtm
 		return d * t + o;
 	}
 
-	typedef Ray<RtmGeneralType,		3>			Ray3;
+	typedef Ray<Decimal,		3>			Ray3;
 	typedef Ray<float,				3>			Ray3f;
 	typedef Ray<double,				3>			Ray3d;
 	typedef Ray<long double,		3>			Ray3ld;

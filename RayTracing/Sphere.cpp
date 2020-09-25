@@ -1,15 +1,16 @@
+#include "Precompile.h"
 #include "Sphere.h"
 
-bool rd::Sphere::rayHit(const rtm::Ray3 & ray, rtm::RtmGeneralType tMin, rtm::RtmGeneralType tMax, HitRecord & record)
+bool rd::Sphere::rayHit(const rtm::Ray3 & ray, rtm::Decimal tMin, rtm::Decimal tMax, HitRecord & record, rtm::Decimal time)
 {
 	const rtm::Vec3 oc = ray.o - o;
-	const rtm::RtmGeneralType b = 2 * rtm::dot(oc, ray.d);
-	const rtm::RtmGeneralType c = rtm::dot(oc, oc) - r * r;
-	const rtm::RtmGeneralType discriminant = b * b - 4 * c;
+	const rtm::Decimal b = 2 * rtm::dot(oc, ray.d);
+	const rtm::Decimal c = rtm::dot(oc, oc) - r * r;
+	const rtm::Decimal discriminant = b * b - 4 * c;
 	if (discriminant > 0)
 	{
 		{
-			const rtm::RtmGeneralType temp = (-b - std::sqrt(discriminant))*0.5;
+			const rtm::Decimal temp = (-b - std::sqrt(discriminant))*0.5;
 			if (temp<tMax && temp>tMin)
 			{
 				record.t = temp;
@@ -20,7 +21,7 @@ bool rd::Sphere::rayHit(const rtm::Ray3 & ray, rtm::RtmGeneralType tMin, rtm::Rt
 			}
 		}
 		{
-			const rtm::RtmGeneralType temp = (-b + std::sqrt(discriminant))*0.5;
+			const rtm::Decimal temp = (-b + std::sqrt(discriminant))*0.5;
 			if (temp<tMax && temp>tMin)
 			{
 				record.t = temp;

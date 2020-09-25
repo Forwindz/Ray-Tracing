@@ -1,3 +1,4 @@
+#include "Precompile.h"
 #include "Canvas.h"
 
 rd::Canvas::Canvas(const int width, const int height)

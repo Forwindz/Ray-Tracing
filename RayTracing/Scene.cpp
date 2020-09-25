@@ -1,3 +1,4 @@
+#include "Precompile.h"
 #include "Scene.h"
 
 rd::Scene::~Scene()
@@ -17,14 +18,14 @@ void rd::Scene::removeHitable(Hitable * hitable)
 	}
 }
 
-bool rd::Scene::rayHit(const rtm::Ray3 & ray, rtm::RtmGeneralType tMin, rtm::RtmGeneralType tMax, HitRecord & record)
+bool rd::Scene::rayHit(const rtm::Ray3 & ray, rtm::Decimal tMin, rtm::Decimal tMax, HitRecord & record, rtm::Decimal time)
 {
 	HitRecord hr;
 	bool hitSomething = false;
 	double currentT = tMax;
 	for (auto& x : hitObj)
 	{
-		if (x->rayHit(ray, tMin, tMax, hr))
+		if (x->rayHit(ray, tMin, tMax, hr, time))
 		{
 			hitSomething = true;
 			if (hr.t < currentT)

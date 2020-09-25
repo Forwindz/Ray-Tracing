@@ -84,7 +84,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>Create</PrecompiledHeader>
       <PrecompiledHeaderFile>Precompile.h</PrecompiledHeaderFile>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -110,6 +110,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precomplie.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -117,6 +119,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AABB.cpp" />
     <ClCompile Include="Assert.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Canvas.cpp" />
@@ -129,22 +132,28 @@
     <ClCompile Include="Sphere.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AABB.h" />
     <ClInclude Include="Assert.h" />
+    <ClInclude Include="BVHNode.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Canvas.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="globalTools.h" />
+    <ClInclude Include="Hitable.h" />
+    <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialDielectric.h" />
     <ClInclude Include="MaterialLambertian.h" />
     <ClInclude Include="MaterialMetal.h" />
     <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MovingObject.h" />
     <ClInclude Include="Precompile.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="RayTracingMath.h" />
     <ClInclude Include="Saver.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Sphere.h" />
+    <ClInclude Include="TimeRay.h" />
     <ClInclude Include="Vec2.h" />
     <ClInclude Include="Vec3.h" />
     <ClInclude Include="Vec4.h" />

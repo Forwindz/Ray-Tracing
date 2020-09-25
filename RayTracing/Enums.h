@@ -12,15 +12,15 @@ namespace rtm
 //types
 #ifdef RTM_LOW_PRECISION
 	//TODO: half float need to be realized by hand
-	//typedef RtmGeneralType short float
+	//typedef Decimal short float
 #else
 	#ifdef RTM_HIGH_PRECISION
-		typedef double RtmGeneralType;
+		typedef double Decimal;
 	#else 
 		#ifdef RTM_EXTREME_HIGH_PRECISION
-			typedef long double RtmGeneralType;
+			typedef long double Decimal;
 		#else
-			typedef float RtmGeneralType;
+			typedef float Decimal;
 		#endif 
 	#endif
 #endif

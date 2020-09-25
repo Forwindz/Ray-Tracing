@@ -58,6 +58,12 @@
     <Filter Include="源文件\Engine\Scene\SceneObject">
       <UniqueIdentifier>{4ccb4a98-1f08-4799-a80a-36825e7ae0aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Engine\Scene\Volume">
+      <UniqueIdentifier>{3c503f5d-7672-4a53-b19a-b6310157118e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine\Scene\Volume\BVH">
+      <UniqueIdentifier>{52433173-36e2-4386-a7c4-51d67699d7c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -89,6 +95,9 @@
     </ClCompile>
     <ClCompile Include="Sphere.cpp">
       <Filter>源文件\Engine\Scene\SceneObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AABB.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +160,24 @@
     </ClInclude>
     <ClInclude Include="MaterialDielectric.h">
       <Filter>头文件\Engine\Scene\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeRay.h">
+      <Filter>头文件\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Hitable.h">
+      <Filter>头文件\Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>头文件\Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingObject.h">
+      <Filter>头文件\Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AABB.h">
+      <Filter>头文件\Engine\Scene\Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="BVHNode.h">
+      <Filter>头文件\Engine\Scene\Volume\BVH</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

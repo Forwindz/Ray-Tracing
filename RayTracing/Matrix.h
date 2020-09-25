@@ -74,18 +74,18 @@ namespace rtm
 		Vec<T, xLen, features> m[yLen];
 	};
 
-	typedef Matrix<RtmGeneralType, 4, 4> Mat4x4;
-	typedef Matrix<RtmGeneralType, 4, 4> Mat4;
-	typedef Matrix<RtmGeneralType, 4, 3> Mat4x3;
-	typedef Matrix<RtmGeneralType, 3, 4> Mat3x4;
-	typedef Matrix<RtmGeneralType, 4, 2> Mat4x2;
-	typedef Matrix<RtmGeneralType, 2, 4> Mat2x4;
-	typedef Matrix<RtmGeneralType, 3, 3> Mat3x3;
-	typedef Matrix<RtmGeneralType, 3, 3> Mat3;
-	typedef Matrix<RtmGeneralType, 3, 2> Mat3x2;
-	typedef Matrix<RtmGeneralType, 2, 3> Mat2x3;
-	typedef Matrix<RtmGeneralType, 2, 2> Mat2x2;
-	typedef Matrix<RtmGeneralType, 2, 2> Mat2;
+	typedef Matrix<Decimal, 4, 4> Mat4x4;
+	typedef Matrix<Decimal, 4, 4> Mat4;
+	typedef Matrix<Decimal, 4, 3> Mat4x3;
+	typedef Matrix<Decimal, 3, 4> Mat3x4;
+	typedef Matrix<Decimal, 4, 2> Mat4x2;
+	typedef Matrix<Decimal, 2, 4> Mat2x4;
+	typedef Matrix<Decimal, 3, 3> Mat3x3;
+	typedef Matrix<Decimal, 3, 3> Mat3;
+	typedef Matrix<Decimal, 3, 2> Mat3x2;
+	typedef Matrix<Decimal, 2, 3> Mat2x3;
+	typedef Matrix<Decimal, 2, 2> Mat2x2;
+	typedef Matrix<Decimal, 2, 2> Mat2;
 
 	template<typename T, int yLen, int xLen, Feature features>
 	std::ostream& operator<< (std::ostream& output, Matrix<T, yLen, xLen, features>& c)

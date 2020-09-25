@@ -66,7 +66,7 @@ namespace rtm
 #undef RTM_DEFINE_OPERATOR_SELF_OP_VEC4_AND_SCALAR
 	};
 	//define types
-	typedef Vec<RtmGeneralType,		4>			Vec4;
+	typedef Vec<Decimal,		4>			Vec4;
 	typedef Vec<float,				4>			Vec4f;
 	typedef Vec<double,				4>			Vec4d;
 	typedef Vec<long double,		4>			Vec4ld;

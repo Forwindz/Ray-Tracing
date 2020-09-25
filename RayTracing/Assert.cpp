@@ -1,3 +1,4 @@
+#include "Precompile.h"
 #include "Assert.h"
 
 void runtimeAssert(const bool condition, const std::string & errorInfo)

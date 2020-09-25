@@ -57,7 +57,7 @@ namespace rtm
 	};
 
 	//define types
-	typedef Vec<RtmGeneralType, 2>			Vec2;
+	typedef Vec<Decimal, 2>			Vec2;
 	typedef Vec<float, 2>			Vec2f;
 	typedef Vec<double, 2>			Vec2d;
 	typedef Vec<long double, 2>			Vec2ld;
